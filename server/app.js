@@ -67,7 +67,7 @@ async function init() {
 		require('./scores')(app);
 		require('./chartDownloads')(app);
 		require('./screenshots')(app);
-
+		
 		expressApp.use(express.static('../client'));
 		
 		expressApp.listen(8000, () => console.log('listening...'));

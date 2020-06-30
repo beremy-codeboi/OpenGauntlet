@@ -2,4 +2,3 @@ server/node_modules/**
 server/store/**
 server/pack/**
 server/screenshots/**
-server/random_image_request_log.txt

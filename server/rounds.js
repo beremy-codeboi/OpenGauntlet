@@ -1,6 +1,6 @@
 const roundsData = require('./rounds.json');
 const roundDuration = 1000 * 60 * 60 * 24 * 14;
-const roundsStart = 1578124800000 - 1000 * 60 * 60; // Oops, subtracted an hour because I forgot about daylight saving time.
+const roundsStart = 1578124800000;
 
 (() => {
 	roundsData.chartsById = {};

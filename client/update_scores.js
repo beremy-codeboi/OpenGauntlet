@@ -67,12 +67,16 @@ window.addEventListener('load', () => {
 			+ score.mineCount + 'M]';
 	}
 	
-	function showRound(roundContent, round, scores) {
-		roundContent.innerHTML = '';
+	function showRound(round, scores) {
+		content.innerHTML = '';
+		
+		let endMessage = document.createElement('p');
+		endMessage.appendChild(document.createTextNode(round.name + ' will end ' + Utils.formatDate(new Date(round.endTimestamp))));
+		content.appendChild(endMessage);
 		
 		let container = document.createElement('div');
 		container.classList.add('center_wrapper');
-		roundContent.appendChild(container);
+		content.appendChild(container);
 		
 		let currentScoreContainer = null;
 		
@@ -357,55 +361,27 @@ window.addEventListener('load', () => {
 		if (loadedUpdateScoresPage) return;
 		loadedUpdateScoresPage = true;
 		
-		makeApiRequest('/rounds')
+		makeApiRequest('/current_round')
 			.then(roundResponse => {
 				if (roundResponse.error) {
 					showMessage(roundResponse.error);
 					return;
 				}
-
-				let allRounds = roundResponse.body.rounds;
-
-				if (allRounds.length > 0)
-				{
-					content.innerHTML = '';
-					
-					let selectWrapper = document.createElement('div');
-					selectWrapper.style.width = '100%';
-					selectWrapper.style.textAlign = 'center';
-					selectWrapper.style.padding = '0px 0px 20px 0px';
-					let roundSelect = document.createElement('select');
-					allRounds.forEach(round => {
-						let roundOption = document.createElement('option');
-						roundOption.value = round.index;
-						roundOption.appendChild(document.createTextNode(round.name));
-						roundSelect.appendChild(roundOption);
-					});
-					roundSelect.style.fontSize = '1em';
-					selectWrapper.appendChild(roundSelect);
-					
-					content.appendChild(selectWrapper);
-					
-					let roundContent = document.createElement('div');
-					content.appendChild(roundContent);
-					
-					function updateShownRound() {
-						let round = allRounds[+roundSelect.value];
-						let url = '/round_scores/' + round.index + '/' + localStorage.getItem('userId');
-						console.log(url);
-						makeApiRequest(url)
-							.then(scoresResponse => {
-								if (scoresResponse.error) {
-									showMessage(scoresResponse.error);
-									return;
-								}
-								
-								showRound(roundContent, round, scoresResponse.body.scores);
-							});
-					}
-
-					roundSelect.onchange = updateShownRound;
-					updateShownRound();
+				
+				let roundData = roundResponse.body;
+				
+				if (roundData.round) {
+					let url = '/round_scores/' + roundData.round.index + '/' + localStorage.getItem('userId');
+					console.log(url);
+					makeApiRequest(url)
+						.then(scoresResponse => {
+							if (scoresResponse.error) {
+								showMessage(scoresResponse.error);
+								return;
+							}
+							
+							showRound(roundData.round, scoresResponse.body.scores);
+						});
 				} else {
 					showMessage('No round is currently in progress.');
 				}

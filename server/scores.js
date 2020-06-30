@@ -159,12 +159,18 @@ module.exports = app => {
 		if (typeof(chartId) !== 'string') {
 			return res.status(400).json({ error: 'Chart id must be a string.', key: 'chartId' });
 		}
-
-		let chart = rounds.getChart(chartId);
-		let round = rounds.getRound(chart.roundIndex);
-
+		
+		let round, chart;
+		if (sender.admin) {
+			chart = rounds.getChart(chartId);
+			round = rounds.getRound(chart.roundIndex);
+		} else {
+			round = rounds.getCurrentRound();
+			chart = round && round.charts.find(chart => chart.id === chartId);
+		}
+		
 		if (!chart) {
-			return res.status(400).json({ error: 'Chart not found.' });
+			return res.status(400).json({ error: 'Chart is not in round.' });
 		}
 		
 		let badItem = ScoreUtils.getNumericItems().find(item => {
@@ -251,17 +257,18 @@ module.exports = app => {
 			return res.status(201).json({ score });
 		})().catch(next);
 	});
-
+	
+	app.expressApp.get('/current_round', (req, res, next) => {
+		res.status(200).json({ round: rounds.getCurrentRound() });
+	});
+	
 	app.expressApp.get('/rounds', (req, res, next) => {
 		let now = Date.now();
 		
-		let memeTime = 1585724400000;
-		let isMemeTime = now >= memeTime;
+		let startedRounds = rounds.getAllRounds()
+			.filter(round => round.startTimestamp <= now);
 		
-		let curRounds = rounds.getAllRounds();
-		if (!isMemeTime) curRounds = curRounds.slice(0, curRounds.length - 1);
-
-		res.status(200).json({ rounds: curRounds });
+		res.status(200).json({ rounds: startedRounds });
 	});
 	
 	app.expressApp.post('/scores_for_approval', (req, res, next) => {

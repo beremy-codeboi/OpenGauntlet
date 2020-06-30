@@ -53,7 +53,8 @@ function Screenshots(app) {
 		
 		let senderId = authTokens.userIdForToken(token);
 		
-		let chart = rounds.getChart(req.params.chartId);
+		let chart = rounds.getCurrentRound().charts.filter(c => c.id === req.params.chartId)[0];
+		
 		if (!chart) return res.status(404).json({ error: 'Chart not found in current round.' });
 		
 		let scoreId = chart.id + '_' + senderId;
