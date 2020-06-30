@@ -1,0 +1,460 @@
+{
+	"rounds": [
+		{
+			"name": "Round 1",
+			"roundId": "round_1",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 12,
+					"stepCount": 642,
+					"holdCount": 48,
+					"rollCount": 2,
+					"mineCount": 4,
+					"title": "Cytokinesis",
+					"songId": "cytokinesis",
+					"shortTitle": "Cytokinesis"
+				},
+				{
+					"difficulty": 11,
+					"stepCount": 698,
+					"holdCount": 21,
+					"rollCount": 0,
+					"mineCount": 7,
+					"title": "Killer Bee",
+					"songId": "killer_bee",
+					"shortTitle": "Killer Bee"
+				},
+				{
+					"difficulty": 13,
+					"stepCount": 583,
+					"holdCount": 4,
+					"rollCount": 5,
+					"mineCount": 26,
+					"title": "Macarena",
+					"songId": "macarena",
+					"shortTitle": "Macarena"
+				},
+				{
+					"difficulty": 11,
+					"stepCount": 545,
+					"holdCount": 36,
+					"rollCount": 41,
+					"mineCount": 0,
+					"title": "We Met Dat Night",
+					"songId": "we_met_dat_night",
+					"shortTitle": "We Met Dat Night"
+				},
+				{
+					"difficulty": 11,
+					"stepCount": 488,
+					"holdCount": 11,
+					"rollCount": 0,
+					"mineCount": 14,
+					"title": "Wild Rush",
+					"songId": "wild_rush",
+					"shortTitle": "Wild Rush"
+				}
+			]
+		},
+		{
+			"name": "Round 2",
+			"roundId": "round_2",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 11,
+					"stepCount": 604,
+					"holdCount": 3,
+					"rollCount": 0,
+					"mineCount": 57,
+					"title": "DeltaMAX",
+					"songId": "deltamax",
+					"shortTitle": "DeltaMAX"
+				},
+				{
+					"difficulty": 12,
+					"stepCount": 633,
+					"holdCount": 57,
+					"rollCount": 11,
+					"mineCount": 8,
+					"title": "Fracture Ray",
+					"songId": "fracture_ray",
+					"shortTitle": "Fracture Ray"
+				},
+				{
+					"difficulty": 13,
+					"stepCount": 1331,
+					"holdCount": 4,
+					"rollCount": 2,
+					"mineCount": 47,
+					"title": "Long Train Runnin'",
+					"songId": "long_train_runnin",
+					"shortTitle": "Long Train Runnin'"
+				},
+				{
+					"difficulty": 12,
+					"stepCount": 761,
+					"holdCount": 17,
+					"rollCount": 3,
+					"mineCount": 1,
+					"title": "Red Line -021-",
+					"songId": "red_line_021",
+					"shortTitle": "Red Line -021-"
+				},
+				{
+					"difficulty": 13,
+					"stepCount": 763,
+					"holdCount": 7,
+					"rollCount": 11,
+					"mineCount": 0,
+					"title": "unFe",
+					"songId": "unfe",
+					"shortTitle": "unFe"
+				}
+			]
+		},
+		{
+			"name": "Round 3",
+			"roundId": "round_3",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 14,
+					"stepCount": 1052,
+					"holdCount": 41,
+					"rollCount": 4,
+					"mineCount": 11,
+					"title": "Bangin' Burst",
+					"songId": "bangin_burst",
+					"shortTitle": "Bangin' Burst"
+				},
+				{
+					"difficulty": 13,
+					"stepCount": 841,
+					"holdCount": 17,
+					"rollCount": 0,
+					"mineCount": 70,
+					"title": "Chaos Energy",
+					"songId": "chaos_energy",
+					"shortTitle": "Chaos Energy"
+				},
+				{
+					"difficulty": 13,
+					"stepCount": 848,
+					"holdCount": 7,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "Got more raves?",
+					"songId": "got_more_raves",
+					"shortTitle": "Got more raves?"
+				},
+				{
+					"difficulty": 14,
+					"stepCount": 870,
+					"holdCount": 14,
+					"rollCount": 5,
+					"mineCount": 114,
+					"title": "Heey!",
+					"songId": "heey",
+					"shortTitle": "Heey!"
+				},
+				{
+					"difficulty": 14,
+					"stepCount": 765,
+					"holdCount": 36,
+					"rollCount": 0,
+					"mineCount": 1558,
+					"title": "The Festival of Ghost 2",
+					"songId": "the_festival_of_ghost_2",
+					"shortTitle": "The Festival of Ghost 2"
+				}
+			]
+		},
+		{
+			"name": "Round 4",
+			"roundId": "round_4",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 14,
+					"stepCount": 878,
+					"holdCount": 93,
+					"rollCount": 16,
+					"mineCount": 0,
+					"title": "1337 World",
+					"songId": "1337_world",
+					"shortTitle": "1337 World"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 780,
+					"holdCount": 19,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "Elvis",
+					"songId": "elvis",
+					"shortTitle": "Elvis"
+				},
+				{
+					"difficulty": 14,
+					"stepCount": 1770,
+					"holdCount": 75,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "Holy Orders",
+					"songId": "holy_orders",
+					"shortTitle": "Holy Orders"
+				},
+				{
+					"difficulty": 14,
+					"stepCount": 922,
+					"holdCount": 33,
+					"rollCount": 26,
+					"mineCount": 8,
+					"title": "I",
+					"songId": "i",
+					"shortTitle": "I"
+				},
+				{
+					"difficulty": 14,
+					"stepCount": 1170,
+					"holdCount": 86,
+					"rollCount": 9,
+					"mineCount": 27,
+					"title": "ouroboros -twin stroke of the end-",
+					"songId": "ouroboros_twin_stroke_of_the_end",
+					"shortTitle": "ouroboros -twin stroke of the end-"
+				}
+			]
+		},
+		{
+			"name": "Round 5",
+			"roundId": "round_5",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 15,
+					"stepCount": 796,
+					"holdCount": 16,
+					"rollCount": 2,
+					"mineCount": 27,
+					"title": "Dream To Nightmare",
+					"songId": "dream_to_nightmare",
+					"shortTitle": "Dream To Nightmare"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 766,
+					"holdCount": 63,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "EGOISM 440",
+					"songId": "egoism_440",
+					"shortTitle": "EGOISM 440"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 998,
+					"holdCount": 7,
+					"rollCount": 1,
+					"mineCount": 35,
+					"title": "J'ai Envie de Plaisir X2",
+					"songId": "jai_envie_de_plaisir_x2",
+					"shortTitle": "J'ai Envie de Plaisir X2"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 2187,
+					"holdCount": 247,
+					"rollCount": 32,
+					"mineCount": 82,
+					"title": "Stealth-Dash",
+					"songId": "stealthdash",
+					"shortTitle": "Stealth-Dash"
+				},
+				{
+					"difficulty": 16,
+					"stepCount": 2021,
+					"holdCount": 117,
+					"rollCount": 0,
+					"mineCount": 136,
+					"title": "You Are Miserable",
+					"songId": "you_are_miserable",
+					"shortTitle": "You Are Miserable"
+				}
+			]
+		},
+		{
+			"name": "Round 6",
+			"roundId": "round_6",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 15,
+					"stepCount": 921,
+					"holdCount": 17,
+					"rollCount": 3,
+					"mineCount": 56,
+					"title": "Dyscontrolled Galaxy",
+					"songId": "dyscontrolled_galaxy",
+					"shortTitle": "Dyscontrolled Galaxy"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 941,
+					"holdCount": 47,
+					"rollCount": 13,
+					"mineCount": 173,
+					"title": "Frictional Nevada",
+					"songId": "frictional_nevada",
+					"shortTitle": "Frictional Nevada"
+				},
+				{
+					"difficulty": 15,
+					"stepCount": 840,
+					"holdCount": 13,
+					"rollCount": 0,
+					"mineCount": 148,
+					"title": "Furifuri",
+					"songId": "furifuri",
+					"shortTitle": "Furifuri"
+				},
+				{
+					"difficulty": 16,
+					"stepCount": 1116,
+					"holdCount": 70,
+					"rollCount": 0,
+					"mineCount": 6,
+					"title": "Superluminal Tachyon Explosion",
+					"songId": "superluminal_tachyon_explosion",
+					"shortTitle": "Superluminal Tachyon Explosion"
+				},
+				{
+					"difficulty": 16,
+					"stepCount": 1400,
+					"holdCount": 377,
+					"rollCount": 41,
+					"mineCount": 381,
+					"title": "V (Rasen Style)",
+					"songId": "v_rasen_style",
+					"shortTitle": "V "
+				}
+			]
+		},
+		{
+			"name": "Round 7",
+			"roundId": "round_7",
+			"scored": true,
+			"charts": [
+				{
+					"difficulty": 18,
+					"stepCount": 1153,
+					"holdCount": 13,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "A",
+					"songId": "a",
+					"shortTitle": "A"
+				},
+				{
+					"difficulty": 17,
+					"stepCount": 1873,
+					"holdCount": 109,
+					"rollCount": 3,
+					"mineCount": 17,
+					"title": "Critical Crystal",
+					"songId": "critical_crystal",
+					"shortTitle": "Critical Crystal"
+				},
+				{
+					"difficulty": 16,
+					"stepCount": 1090,
+					"holdCount": 120,
+					"rollCount": 0,
+					"mineCount": 4,
+					"title": "Footsekz",
+					"songId": "footsekz",
+					"shortTitle": "Footsekz"
+				},
+				{
+					"difficulty": 17,
+					"stepCount": 2018,
+					"holdCount": 157,
+					"rollCount": 24,
+					"mineCount": 272,
+					"title": "Tsugihagi Construction",
+					"songId": "tsugihagi_construction",
+					"shortTitle": "Tsugihagi Construction"
+				},
+				{
+					"difficulty": 17,
+					"stepCount": 1609,
+					"holdCount": 300,
+					"rollCount": 2,
+					"mineCount": 86,
+					"title": "Zombie Sunset",
+					"songId": "zombie_sunset",
+					"shortTitle": "Zombie Sunset"
+				}
+			]
+		},
+		{
+			"name": "Meme Round",
+			"roundId": "meme_round",
+			"scored": false,
+			"charts": [
+				{
+					"difficulty": 300,
+					"stepCount": 1282,
+					"holdCount": 1,
+					"rollCount": 0,
+					"mineCount": 0,
+					"title": "Ants",
+					"songId": "ants",
+					"shortTitle": "Ants"
+				},
+				{
+					"difficulty": 18,
+					"stepCount": 1122,
+					"holdCount": 122,
+					"rollCount": 0,
+					"mineCount": 217,
+					"title": "DEAD END (\"GROOVE RADAR\" Special)",
+					"songId": "dead_end_groove_radar_special",
+					"shortTitle": "DEAD END "
+				},
+				{
+					"difficulty": 23,
+					"stepCount": 1074,
+					"holdCount": 43,
+					"rollCount": 0,
+					"mineCount": 4,
+					"title": "Phantom",
+					"songId": "phantom",
+					"shortTitle": "Phantom"
+				},
+				{
+					"difficulty": 24,
+					"stepCount": 1415,
+					"holdCount": 111,
+					"rollCount": 4,
+					"mineCount": 1,
+					"title": "Seanbante and the Pirate's Curse",
+					"songId": "seanbante_and_the_pirates_curse",
+					"shortTitle": "Seanbante and the Pirate's Curse"
+				},
+				{
+					"difficulty": 22,
+					"stepCount": 1606,
+					"holdCount": 4,
+					"rollCount": 5,
+					"mineCount": 44,
+					"title": "We Fucking Hate You",
+					"songId": "we_fucking_hate_you",
+					"shortTitle": "We Fucking Hate You"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,132 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<title>Fantastic Attack Gauntlet</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/png" href="/sal_16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/sal_32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/sal_192.png" sizes="192x192">
+	<script src="utils.js"></script>
+	<script src="index.js"></script>
+	<script src="login.js"></script>
+	<script src="register.js"></script>
+	<script src="check_browser.js"></script>
+	<script src="update_scores.js"></script>
+	<script src="rankings.js"></script>
+	<script src="api.js"></script>
+	<script src="modal.js"></script>
+	<script src="charts.js"></script>
+	<script src="common/ScoreUtils.js"></script>
+</head>
+
+<body><div id="everything">
+	<p><img src="cunt_small.png" class="cunt"></img></p>
+	
+	<div>
+		<div id="login_panel" class="hidden">
+			<div class="inline_block"><div class="login_input_label">Username: </div><input id="login_username" type="text" maxLength="32"></input> <span class="input_error" id="login_username_error"></span></div>
+			<div class="inline_block"><div class="login_input_label">Password: </div><input id="login_password" type="password" maxLength="512"></input> <span class="input_error" id="login_password_error"></span></div>
+			<div class="button login_button" id="login">Log In</div>
+			<div id="login_panel_error" class="input_error hidden">Error logging in.</div>
+		</div>
+		
+		<div id="user_panel" class="hidden">
+			<div class="lds-ripple-hidden" id="user_panel_spinner"><div></div><div></div></div>
+			<span id="user_panel_message">Logging in as ??????????...</span>
+			<div class="link_button hidden" id="logout_button">Logout</div>
+			<a href="/admin.html" class="hidden" id="admin_link">Admin</a>
+		</div>
+	</div>
+	
+	<div class="tab_bar">
+		<div class="tab" id="tab_home">Home</div>
+		<div class="tab" id="tab_rankings">Rankings</div>
+		<div class="tab" id="tab_charts">Download Charts</div>
+		<div class="tab" id="tab_registration">Register</div>
+		<div class="tab hidden" id="tab_update_scores">Update Scores</div>
+	</div>
+
+	<div class="content_wrapper">
+		<div class="content hidden" id="content_registration">
+			<h3>Register</h3>
+			
+			<p><div class="input_label">Username: </div><input id="username" type="text" maxlength="32"></input> <span class="input_error" id="username_error"></span></p>
+			<p><div class="input_label">Password: </div><input type="password" id="password" maxlength="512"></input> <span class="input_error" id="password_error"></span></p>
+			<p><div class="input_label">Confirm Password: </div><input type="password" id="confirm_password" maxlength="512"></input> <span class="input_error" id="confirm_password_error"></span></p>
+			
+			<p><div class="input_label"></div><div class="button" id="register">Register</div><span class="input_error" id="register_error"></span></p>
+		</div>
+		
+		<div class="content hidden" id="content_home">
+			<p>The Fantastic Attack Gauntlet is a remote In The Groove/Stepmania tournament that emphasizes FA and technical ability.</p>
+			<p>The tournament starts on <span class="local_date" data-timestamp="1578038400000"></span>. You can register after the tournament starts, but you won't get points for rounds you miss.</p>
+			
+			<h3>Format</h3>
+			<ul>
+				<li>Each round will consist of 5 songs.</li>
+				<li>You may submit scores for each song any number of times per round.</li>
+				<li>Your score for a round is the sum of your best score on each song.</li>
+				<li>No one will be eliminated between rounds.</li>
+				<li>Songs will range in difficulty from 11 to 18 with rounds getting progressively harder.</li>
+				<li><span style="text-decoration:line-through">Each round will last 2 weeks.</span> All rounds have been opened indefinitely as players may not have machine access during the COVID-19 pandemic.</li>
+				<li>Players get tournament points from each round based on how they place in that round.
+					1st place gets 10 points, 2nd gets 9, etc. 10th place gets 1 point and everyone else gets 0 points.</li>
+				<li>At the end of the tournament, players are ranked by their total tournament points, with ties broken by total score over all rounds.</li>
+				<li>Failed scores still count.</li>
+			</ul>
+			
+			<h3>Scoring</h3>
+			<div style="text-align:center">
+				<table>
+					<tr class="title"><td>Judgement</td><td>Points</td></tr>
+					<tr><td>Fantastic</td><td>3</td></tr>
+					<tr><td>Excellent</td><td>1</td></tr>
+					<tr><td>Great</td><td>0</td></tr>
+					<tr><td>Decent</td><td>0</td></tr>
+					<tr><td>Way Off</td><td>0</td></tr>
+					<tr><td>Miss</td><td>-1</td></tr>
+					<tr><td>Hold/Roll</td><td>3</td></tr>
+					<tr><td>Mine</td><td>-3</td></tr>
+				</table>
+			</div>
+			
+			<h3>Rules</h3>
+			<ul>
+				<li>Pad scores only. If you're a keyboard player you're in the wrong place.</li>
+				<li>Scores must be submitted along with a screenshot or video link. Mods will adjust or remove your score if the screenshot doesn't match.</li>
+				<li>Must be played on ITG timing and life settings. (Life & Judge 4, no FA+, no StomperZ, etc.)</li>
+				<li>Decents and Wayoffs must be ENABLED.</li>
+				<li>Mines also must be ON.</li>
+				<li>Cmods are allowed unless the chart states otherwise.</li>
+				<li>Turn mods are allowed (mirror, left, right).</li>
+				<li>While bracketing is generally gonna get you made fun of, it is allowed. (Your FA will suffer though.)</li>
+			</ul>
+			
+			<div class="nologin">
+			<h3>Registration</h3>
+			
+			<p>Registration is open to anyone. You can register <a href="#registration">here</a>.</p>
+			</div>
+		</div>
+		
+		<div class="content hidden" id="content_update_scores">
+			<div class="lds-ripple" id="update_scores_spinner"><div></div><div></div></div>
+			Loading...
+		</div>
+		
+		<div class="content hidden" id="content_rankings">
+			<h3>Tournament Rankings</h3>
+			<div id="tournament_rankings" class="rankings_section"></div>
+			<h3>Round Rankings</h3>
+			<div id="round_ranking_links" class="rankings_section"></div>
+			<br/>
+			<div id="round_rankings" class="rankings_section"></div>
+		</div>
+		
+		<div class="content hidden" id="content_charts"></div>
+	</div>
+</div></body>
+
+</html>

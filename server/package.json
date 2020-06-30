@@ -1,0 +1,16 @@
+{
+  "name": "fag_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "argon2": "^0.25.1",
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
+  }
+}
