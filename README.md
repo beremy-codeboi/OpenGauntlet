@@ -1,6 +1,8 @@
 How to Run
 ----------
 
+Shoutout to BoxX for the original code and taking time to open source it <3
+
 Install [node js](https://nodejs.org). I think it comes with [npm](https://www.npmjs.com/) but you'll need that too.
 
 Open the `server` folder and run
